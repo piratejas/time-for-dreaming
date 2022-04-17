@@ -1,1 +1,107 @@
 /* Copy and paste your CSS from CodePen into here */
+html {
+    font-size: 10px;
+  }
+  
+  body {
+    font-family: "Roboto Slab", serif;
+    background-color: #f6f5f3;
+  }
+  
+  header {
+    height: 406px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 5px;
+    color: black;
+  }
+  
+  h2 {
+    margin: 0px;
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: #989898;
+  }
+  
+  .hero-image {
+    grid-area: header;
+    background: url("https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/12/charles-bradley.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 28%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .timeline {
+    grid-area: timeline;
+  }
+  
+  .quotation {
+    grid-area: quotation;
+    font-size: 1.8rem;
+    font-weight: 150;
+    font-style: italic;
+    color: white;
+    width: 60%;
+    margin: auto;
+    background: #333;
+    border-radius: 1%;
+    padding: 25px;
+  }
+  
+  .img-div {
+    grid-area: img-div;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .footer {
+    grid-area: footer;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header" "timeline timeline quotation" "timeline timeline img-div" "footer footer footer";
+    grid-template-rows: 406px 1fr 1fr 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  #tribute-info {
+    padding: 10px;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+  }
+  
+  #image {
+    border-radius: 1%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  
